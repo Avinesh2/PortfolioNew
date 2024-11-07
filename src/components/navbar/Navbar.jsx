@@ -12,8 +12,8 @@ const Navbar = () => {
             transition={{duration:0.5}}
              className='font-palanquin font-semibold ml-[120px] text-xl mt-3 max-lg:invisible'>Welcome</motion.span>
             <div className='flex gap-3 mx-3'>
-                <a href='#'><img src='/linkedin.png' width={18}/></a>
-                <a href='#'><img src='/instagram.png' width={18}/></a>
+                <a href='https://www.linkedin.com/in/avinesh-rathore-a73159257/'><img src='/linkedin.png' width={18}/></a>
+                <a href='https://www.instagram.com/avinesh__22/'><img src='/instagram.png' width={18}/></a>
             </div>
 
         </div>

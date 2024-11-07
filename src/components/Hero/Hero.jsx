@@ -41,7 +41,7 @@ const sliderText={
   }
 }
 
-const Hero = () => {
+const Hero = ({ scrollToProjects, scrollToContact }) => {
   return (
     <div className='h-[calc(100vh-80px)] bg-gradient-to-b from-[#0c0c1d] to-[rgb(17,17,50)] overflow-hidden relative'>
     <div className='max-container ml-[120px] h-full w-5/12 max-lg:ml-[0px]'>
@@ -50,13 +50,13 @@ const Hero = () => {
       <motion.div variants={textVariants} className='text-6xl font-palanquin font-bold max-lg:text-4xl max-lg:text-center'>Web Developer and UI Designer</motion.div>
       <motion.div variants={textVariants}
       className=' max-lg:flex max-lg:flex-row'>
-        <motion.button variants={textVariants} className='p-5 border border-white rounded-lg bg-transparent text-white mr-5 max-lg:flex'>See the Latest Work</motion.button>
-        <motion.button variants={textVariants} className='p-5  border border-white rounded-lg bg-transparent text-white mr-5'>Contact Me</motion.button>
+        <motion.button  onClick={scrollToProjects} variants={textVariants} className='p-5 border border-white rounded-lg bg-transparent text-white mr-5 max-lg:flex z-10'>See the Latest Work</motion.button>
+        <motion.button  onClick={scrollToContact} variants={textVariants} className='p-5  border border-white rounded-lg bg-transparent text-white mr-5 z-10'>Contact Me</motion.button>
       </motion.div>
       <motion.img variants={textVariants} animate="scrollButton" src='/scroll.png' width={40} />
     </motion.div>
     </div>
-    <motion.div className='absolute text-[50vh] -bottom-20 whitespace-nowrap text-[#ffffff09] w-5/6 font-bold' variants={sliderText} initial="initial" animate="animate">
+    <motion.div className='absolute text-[50vh] -bottom-20 whitespace-nowrap text-[#ffffff09] w-5/6 font-bold pointer-events-none' variants={sliderText} initial="initial" animate="animate">
     Developer Designer Editor
     </motion.div>
     <div className=' '>

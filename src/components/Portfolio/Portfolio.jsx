@@ -6,26 +6,23 @@ import {motion,useScroll,useSpring, useTransform} from "framer-motion"
         id:1,
         title:"Nike Landing Page",
         img:"https://images.unsplash.com/photo-1579298245158-33e8f568f7d3?q=80&w=1790&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description:"Employing the winning combination of Tailwind CSS and React, I skillfully integrated Tailwind's utility-first styling with React's component-based architecture."
+        description:"Employing the winning combination of Tailwind CSS and React, I skillfully integrated Tailwind's utility-first styling with React's component-based architecture.",
+        link:"https://nike-landing-page-zns2.vercel.app/"
     },
     {
         id:2,
         title:"This Portfolio",
         img:"https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description:"This portfolio was built using React and Tailwind CSS. I used Framer Motion to create the animations and React Scroll to create the smooth scrolling."
+        description:"This portfolio was built using React and Tailwind CSS. I used Framer Motion to create the animations and React Scroll to create the smooth scrolling.",
+        link:""
     },
     {
         id:3,
         title:"TechKnow",
-        img:"https://ibb.co/k4gBP5H",
-        description:"This website was made for technical society of IIIT Kota named Techknow"
-    },
-    {
-        id:4,
-        title:"Qr-code generator",
-        img:"https://images.unsplash.com/photo-1550482781-48d477e61c72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description:"This is a simple Qr-code generator built using Node and Node Package Manager."
-    },
+        img:"https://images.unsplash.com/photo-1672268931087-9384cca148d8?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description:"This website was made for technical society of IIIT Kota named Techknow",
+        link:"https://techknow-azure.vercel.app/"
+    }
  ]
 
  const Section=({item})=>{
@@ -42,7 +39,7 @@ import {motion,useScroll,useSpring, useTransform} from "framer-motion"
                 <motion.div className='flex flex-col gap-[30px] items-start'>
                     <h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl '>{item.title}</h2>
                     <p className='mt-4 text-xl text-white text-justify'>{item.description}</p>
-                    <button className='bg-[#FFA500] rounded-md text-black font-montserrat p-2'>See Demo</button>
+                    <a href={item.link}><button  className='bg-[#FFA500] rounded-md text-black font-montserrat p-2'>See Demo</button></a>
                 </motion.div>
             </motion.div>
         </section>

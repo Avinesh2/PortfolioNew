@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
-const items=["Homepage","Services","Portfolio","Contact","About"]
+const items=["Homepage","About Me","Projects","Contact"]
 const Links = () => {
   return (
     <div className='absolute w-full h-full flex flex-col justify-center items-center gap-[20px]'>
