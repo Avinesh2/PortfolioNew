@@ -15,7 +15,7 @@ const Contact = () => {
           });
       };
   return (
-    <div className=' flex h-full items-center gap-[50px] m-[100px] max-lg:flex-col max-lg:items-start max-lg:gap-[7px] max-lg:m-[30px]'>
+    <div className=' flex h-auto items-center gap-[50px] m-[100px] max-lg:flex-col max-lg:items-start max-lg:gap-[7px] max-lg:m-[30px]'>
         <div className='w-1/2 flex flex-col gap-[40px] max-lg:pt-20 max-lg:w-full '>
             <h1 className='text-6xl font-bold font-Palanquin max-lg:text-5xl'>Let's Work Together</h1>
             <div> 

@@ -31,7 +31,7 @@ export default function App() {
     <section className="h-screen snap-always snap-center "><About /></section>
     <section id="Projects" className="h-screen snap-always snap-center" ref={projectsRef}><Parallax type="portfolio" /></section>
     <Portfolio/>
-    <section id="Contact" className="h-screen snap-always snap-center" ref={contactRef}><Contact /></section>
+    <section id="Contact" className="min-h-screen snap-always snap-center" ref={contactRef}><Contact /></section>
     
   </div>
   )

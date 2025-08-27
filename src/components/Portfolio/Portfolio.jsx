@@ -19,7 +19,7 @@ import {motion,useScroll,useSpring, useTransform} from "framer-motion"
     {
         id:3,
         title:"TechKnow",
-        img:"https://images.unsplash.com/photo-1672268931087-9384cca148d8?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        img:"https://static.vecteezy.com/system/resources/previews/018/796/706/non_2x/vintage-typewriter-alphabet-letter-t-free-png.png",
         description:"This website was made for technical society of IIIT Kota named Techknow",
         link:"https://techknow-azure.vercel.app/"
     }
@@ -36,11 +36,27 @@ import {motion,useScroll,useSpring, useTransform} from "framer-motion"
         <section className='h-screen snap-always snap-center mx-[100px] max-lg:mx-[10px] '>
             <motion.div className='flex gap-5 items-center justify-center h-full max-lg:flex-col '>
                 <img src={item.img} className='object-cover h-1/2 w-1/2 rounded-xl max-lg:object-contain max-lg:rounded-3xl max-lg:pt-20'/>
-                <motion.div className='flex flex-col gap-[30px] items-start'>
-                    <h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl '>{item.title}</h2>
-                    <p className='mt-4 text-xl text-white text-justify'>{item.description}</p>
-                    <a href={item.link}><button  className='bg-[#FFA500] rounded-md text-black font-montserrat p-2'>See Demo</button></a>
-                </motion.div>
+                <motion.div 
+  className="
+    m-5 flex flex-col gap-[30px] 
+    items-start        /* default for larger screens */
+    lg:items-start     /* explicitly keep start on large screens */
+    max-lg:items-center max-lg:justify-center  /* center only on mobile */
+  "
+>
+  <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+    {item.title}
+  </h2>
+  <p className="mt-4 text-xl text-white text-justify">
+    {item.description}
+  </p>
+  <a href={item.link}>
+    <button className="bg-[#FFA500] rounded-md text-black font-montserrat p-2">
+      See Demo
+    </button>
+  </a>
+</motion.div>
+
             </motion.div>
         </section>
     )
